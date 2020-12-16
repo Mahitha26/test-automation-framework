@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="New Registration"
+           tests="2"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="37.504">
+  <properties />
+  
+  
+            <testcase name="adminApproval" time="28.440" classname="com.wpa.testcases.Registration" />
+                <testcase name="Register" time="9.064" classname="com.wpa.testcases.Registration" />
+      
+</testsuite>

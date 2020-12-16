@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [BasicSuite]">
+  <listeners>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+    <listener class-name="com.wpa.listeners.CustomListeners"/>
+  </listeners>
+  <test thread-count="5" name="Temporary Password Reset(failed)">
+    <classes>
+      <class name="com.wpa.testcases.TempPasswordReset">
+        <methods>
+          <include name="tempPwdReset"/>
+          <include name="teardown"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.wpa.testcases.TempPasswordReset -->
+    </classes>
+  </test> <!-- Temporary Password Reset(failed) -->
+  <test thread-count="5" name="Admin Deactivates User(failed)">
+    <classes>
+      <class name="com.wpa.testcases.DeactivateUser">
+        <methods>
+          <include name="deactivatedUsrLogin"/>
+          <include name="dealerDeactivate"/>
+          <include name="teardown"/>
+          <include name="deactivatedUsrResets"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.wpa.testcases.DeactivateUser -->
+    </classes>
+  </test> <!-- Admin Deactivates User(failed) -->
+  <test thread-count="5" name="Login for New and Existing User(failed)">
+    <classes>
+      <class name="com.wpa.testcases.LoginTest">
+        <methods>
+          <include name="teardown"/>
+          <include name="loginExistingUser"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.wpa.testcases.LoginTest -->
+    </classes>
+  </test> <!-- Login for New and Existing User(failed) -->
+</suite> <!-- Failed suite [BasicSuite] -->
